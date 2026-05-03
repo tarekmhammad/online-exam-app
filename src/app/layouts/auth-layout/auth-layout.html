@@ -1,0 +1,58 @@
+<div class="flex">
+  <div
+    class="bg-linear-to-l from-blue-100 to-white w-screen h-screen sm:flex justify-center items-center box-border hidden sm:w-1/2"
+  >
+    <div class="m-18">
+      <div class="title flex mb-20">
+        <div class="icon">
+          <lucide-icon [name]="folderCode" class="text-blue-600"></lucide-icon>
+        </div>
+
+        <h2 class="text-blue-600 ml-2 font-semibold">Exam App</h2>
+      </div>
+      <div class="content">
+        <h1 class="text-lg font-bold">
+          Empower your learning journey with our smart exam platform.
+        </h1>
+        <div class="items mt-12">
+          <div class="item-1 flex">
+            <div class="icon border border-blue-600 p-0.5 self-start">
+              <lucide-icon [name]="brain" class="text-blue-600"></lucide-icon>
+            </div>
+            <div class="description ml-4">
+              <h3 class="text-blue-600 font-semibold mb-2">Tailored Diplomas</h3>
+              <p class="text-sm text-gray-600">
+                Choose from specialized tracks like Frontend, Backend, and Mobile Development.
+              </p>
+            </div>
+          </div>
+          <div class="item-2 mt-7 flex">
+            <div class="icon border border-blue-600 p-0.5 self-start">
+              <lucide-icon [name]="bookOpenCheck" class="text-blue-600"> </lucide-icon>
+            </div>
+            <div class="description ml-4">
+              <h3 class="text-blue-600 font-semibold mb-2">Focused Exams</h3>
+              <p class="text-sm text-gray-600">
+                Access topic-specific tests including HTML, CSS, JavaScript, and more.
+              </p>
+            </div>
+          </div>
+          <div class="item-3 mt-7 flex">
+            <div class="icon border border-blue-600 p-0.5 self-start">
+              <lucide-icon [name]="rectangleEllipsis" class="text-blue-600"></lucide-icon>
+            </div>
+            <div class="description ml-4">
+              <h3 class="text-blue-600 font-semibold mb-2">Smart Multi-Step Forms</h3>
+              <p class="text-sm text-gray-600">
+                Choose from specialized tracks like Frontend, Backend, and Mobile Development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sm:w-1/2 w-screen h-screen">
+    <router-outlet></router-outlet>
+  </div>
+</div>

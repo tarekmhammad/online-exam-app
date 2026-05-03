@@ -1,0 +1,65 @@
+<section class="flex h-screen justify-center items-center m-4">
+  <form (ngSubmit)="userInfoHandler()">
+    <h1 class="font-bold text-3xl">Create Account</h1>
+    <h2 class="text-blue-600 font-bold">Tell us more about you</h2>
+    <div class="mt-5 flex gap-2">
+      <div>
+        <label for="firstName">First name</label>
+        <input
+          [(ngModel)]="firstName"
+          [ngModelOptions]="{ standalone: true }"
+          id="firstName"
+          type="text"
+          placeholder="Tarek"
+          class="placeholder:text-gray-400 p-2.5 border border-gray-200 outline-0 w-full"
+        />
+      </div>
+      <div>
+        <label for="lastName">Last name</label>
+        <input
+          [(ngModel)]="lastName"
+          [ngModelOptions]="{ standalone: true }"
+          id="lastName"
+          type="text"
+          placeholder="Hammad"
+          class="placeholder:text-gray-400 p-2.5 border border-gray-200 outline-0 w-full"
+        />
+      </div>
+    </div>
+    <div class="mt-4">
+      <label for="userName">Username</label>
+      <input
+        [(ngModel)]="userName"
+        [ngModelOptions]="{ standalone: true }"
+        id="userName"
+        type="text"
+        placeholder="Hammad"
+        class="placeholder:text-gray-400 p-2.5 border border-gray-200 outline-0 w-full"
+      />
+    </div>
+    <div class="mt-8">
+      <app-input-phone></app-input-phone>
+    </div>
+    <!-- routerLink="/register/userPassword" -->
+    <button
+      class="flex justify-center items-center w-full bg-blue-100 text-black py-2 mt-8 cursor-pointer border border-blue-600"
+    >
+      Next
+      <span class="ml-3"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-chevron-right-icon lucide-chevron-right"
+        >
+          <path d="m9 18 6-6-6-6" /></svg
+      ></span>
+    </button>
+  </form>
+</section>

@@ -1,0 +1,90 @@
+<section class="flex justify-center items-center h-screen">
+  <form [formGroup]="loginForm" (ngSubmit)="loginHandeler()">
+    <h1 class="font-bold text-lg">Login</h1>
+    <div class="mt-8">
+      <label for="username">Username</label>
+      <input
+        formControlName="username"
+        type="text"
+        name="username"
+        id="username"
+        placeholder="user123"
+        class="w-full p-2.5 border border-gray-400"
+        [class.border-red-500]="
+          loginForm.get('username')?.errors && loginForm.get('username')?.touched
+        "
+      />
+      @if (loginForm.get('username')?.errors && loginForm.get('username')?.touched) {
+        <p class="text-red-500">Your username is requied</p>
+      }
+    </div>
+    <div class="relative mt-4">
+      <label for="password">Password</label>
+
+      <input
+        formControlName="password"
+        [type]="inputType"
+        name="password"
+        id="password"
+        placeholder="***********"
+        class="w-full p-2.5 border border-gray-400"
+        [class.border-red-500]="
+          loginForm.get('password')?.errors && loginForm.get('password')?.touched
+        "
+      />
+
+      @if (flag) {
+        <lucide-icon
+          [name]="eye"
+          [size]="16"
+          class="absolute right-1.5 bottom-2 cursor-pointer"
+          (click)="showPassword()"
+        ></lucide-icon>
+      } @else {
+        <lucide-icon
+          [name]="eyeOff"
+          [size]="16"
+          class="absolute right-1.5 bottom-2 cursor-pointer"
+          (click)="showPassword()"
+        ></lucide-icon>
+      }
+    </div>
+    @if (loginForm.get('password')?.errors && loginForm.get('password')?.touched) {
+      <p class="text-red-500">Your password is requied</p>
+    }
+    <p
+      class="text-blue-600 text-sm font-medium flex justify-end mt-2 cursor-pointer"
+      routerLink="/forgotPassword"
+    >
+      Forgot your password?
+    </p>
+    @if (errorMsg) {
+      <p
+        class="flex flex-col items-center relative bg-red-100 w-full border border-red-500 text-red-500 text-center p-1 mt-6"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-x-icon lucide-circle-x bg-white absolute -top-1/2 rounded-full"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="m15 9-6 6" />
+          <path d="m9 9 6 6" />
+        </svg>
+        <span>Something went wrong</span>
+      </p>
+    }
+    <button class="w-full bg-blue-600 text-white py-2 mt-8 cursor-pointer">Login</button>
+    <p class="text-gray-600 text-sm flex justify-center mt-10">
+      Don’t have an account?
+      <span class="text-blue-600 cursor-pointer ml-1" routerLink="/register"> Create yours</span>
+    </p>
+  </form>
+</section>

@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{j as n}from"./chunk-F4UE4D24.mjs";import{l as o}from"./chunk-RJGBKIHK.mjs";import"./chunk-4MVHXB27.mjs";import{Da as i,Ta as r}from"./chunk-JOQCPHJB.mjs";import"./chunk-T55IDOPT.mjs";var s=class t{ngOnInit(){}static \u0275fac=function(e){return new(e||t)};static \u0275cmp=i({type:t,selectors:[["app-register"]],decls:1,vars:0,template:function(e,m){e&1&&r(0,"router-outlet")},dependencies:[n,o],encapsulation:2})};export{s as Register};

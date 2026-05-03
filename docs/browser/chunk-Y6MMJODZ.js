@@ -1,0 +1,1 @@
+import{Ba as o,Qa as s,Ra as i,Za as n}from"./chunk-AHO4SLXT.js";import"./chunk-7CGTOI24.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-diplomes"]],decls:2,vars:0,template:function(e,a){e&1&&(s(0,"p"),n(1,"diplomes works!"),i())},encapsulation:2})};export{p as Diplomes};

@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "/online-exam-app": {},
+    "/online-exam-app/diplomes": {},
+    "/online-exam-app/forgotPassword": {},
+    "/online-exam-app/login": {},
+    "/online-exam-app/newPassword": {},
+    "/online-exam-app/register": {},
+    "/online-exam-app/register/userEmail": {},
+    "/online-exam-app/register/userInfo": {},
+    "/online-exam-app/register/userPassword": {},
+    "/online-exam-app/register/verifyEmail": {},
+    "/online-exam-app/resetPassword": {}
+  }
+}

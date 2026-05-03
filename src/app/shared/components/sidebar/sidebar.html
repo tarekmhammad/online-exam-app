@@ -1,0 +1,122 @@
+<section>
+  <div class="sidebar">
+    <button
+      data-drawer-target="default-sidebar"
+      data-drawer-toggle="default-sidebar"
+      aria-controls="default-sidebar"
+      type="button"
+      class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base ms-3 mt-3 text-sm p-2 focus:outline-none inline-flex sm:hidden"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-width="2"
+          d="M5 7h14M5 12h14M5 17h10"
+        />
+      </svg>
+    </button>
+
+    <aside
+      id="default-sidebar"
+      class="fixed top-0 left-0 z-100 w-64 h-full transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-primary-soft border-e border-default">
+        <div class="header-descraption flex justify-start items-center py-5">
+          <!-- <img src="public/imgs/sidebar-img/elevate.png" class="w-full" alt="tarek" /> -->
+          <div class="text-blue-600 flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-folder-code-icon lucide-folder-code"
+            >
+              <path d="M10 10.5 8 13l2 2.5" />
+              <path d="m14 10.5 2 2.5-2 2.5" />
+              <path
+                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z"
+              />
+            </svg>
+            <span> Exam App</span>
+          </div>
+        </div>
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="#"
+              class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-graduation-cap-icon lucide-graduation-cap"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+              </svg>
+              <span class="ms-3">Diplomes</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-round-icon lucide-user-round"
+              >
+                <circle cx="12" cy="8" r="5" />
+                <path d="M20 21a8 8 0 0 0-16 0" />
+              </svg>
+              <span class="ms-3">Account Settings</span>
+            </a>
+          </li>
+          <li>
+            <div class="card">
+              <img
+                class="relative z-100"
+                src="../../../../../public/imgs/sidebar-img/vector.jpg"
+                alt="avatar"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

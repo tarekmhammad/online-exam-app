@@ -1,0 +1,101 @@
+<section class="flex h-screen justify-center items-center">
+  <form (ngSubmit)="confirmEmailHandler()">
+    <div class="head-content">
+      <h1 class="font-bold text-3xl">Create Account</h1>
+      <h2 class="font-bold text-blue-600 mt-3">Verify OTP</h2>
+      <p class="text-gray-400 text-sm">
+        Please enter the 6-digits code we have sent to:
+        <span class="text-black block"
+          >user@example.com.
+          <a class="text-blue-600 font-bold ml-2 border-b border-blue-600">Edit</a></span
+        >
+      </p>
+    </div>
+    <div class="flex justify-center my-4 space-x-2 rtl:space-x-reverse">
+      <div>
+        <label for="code-1" class="sr-only">First code</label>
+        <input
+          [(ngModel)]="num1"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          maxlength="1"
+          id="code-1"
+          class="block bg-neutral-secondary-medium border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand h-10 w-10 shadow-xs placeholder:text-body"
+          required
+        />
+      </div>
+      <div>
+        <label for="code-2" class="sr-only">Second code</label>
+        <input
+          [(ngModel)]="num2"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          maxlength="1"
+          id="code-2"
+          class="block bg-neutral-secondary-medium border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand h-10 w-10 shadow-xs placeholder:text-body"
+          required
+        />
+      </div>
+      <div>
+        <label for="code-3" class="sr-only">Third code</label>
+        <input
+          [(ngModel)]="num3"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          maxlength="1"
+          id="code-3"
+          class="block bg-neutral-secondary-medium border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand h-10 w-10 shadow-xs placeholder:text-body"
+          required
+        />
+      </div>
+      <div>
+        <label for="code-4" class="sr-only">Fourth code</label>
+        <input
+          [(ngModel)]="num4"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          maxlength="1"
+          id="code-4"
+          class="block bg-neutral-secondary-medium border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand h-10 w-10 shadow-xs placeholder:text-body"
+          required
+        />
+      </div>
+      <div>
+        <label for="code-5" class="sr-only">Fifth code</label>
+        <input
+          [(ngModel)]="num5"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          maxlength="1"
+          id="code-5"
+          class="block bg-neutral-secondary-medium border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand h-10 w-10 shadow-xs placeholder:text-body"
+          required
+        />
+      </div>
+      <div>
+        <label for="code-6" class="sr-only">Sixth code</label>
+        <input
+          [(ngModel)]="num6"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          maxlength="1"
+          id="code-6"
+          class="block bg-neutral-secondary-medium border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand h-10 w-10 shadow-xs placeholder:text-body"
+          required
+        />
+      </div>
+    </div>
+    <p id="helper-text-explanation" class="mt-2.5 text-sm text-body text-center">
+      You can request another code in: 60s
+    </p>
+    <!--    routerLink="/register/userInfo" -->
+    <button
+      class="flex justify-center items-center w-full bg-blue-100 text-black py-2 mt-8 cursor-pointer border border-blue-600"
+    >
+      Verify Code
+    </button>
+    <div class="text-red-700 p-5">
+      <p>{{ num1 }} jjj</p>
+    </div>
+  </form>
+</section>
